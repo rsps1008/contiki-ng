@@ -72,7 +72,7 @@
 #define RADIO_BYTE_AIR_TIME  (1000000 / (RADIO_BIT_RATE / 8))
 
 /* Delay between GO signal and SFD */
-#define RADIO_DELAY_BEFORE_TX ((unsigned)US_TO_RTIMERTICKS(RADIO_PHY_HEADER_LEN * RADIO_BYTE_AIR_TIME))
+#define RADIO_DELAY_BEFORE_TX ((unsigned)US_TO_RTIMERTICKS(81))
 /* Delay between GO signal and start listening.
  * This value is so small because the radio is constantly on within each timeslot. */
 #define RADIO_DELAY_BEFORE_RX ((unsigned)US_TO_RTIMERTICKS(15))
