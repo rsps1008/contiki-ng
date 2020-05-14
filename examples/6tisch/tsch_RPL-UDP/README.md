@@ -1,4 +1,5 @@
-Ruu on CC1350 Launchpad
+Ruu on the TI CC1350 Launchpad
+
 0. Mix the TSCH and UDP-RPL for running the TSCH mode and sending the UDP data pakage.
 1. Change contiki-ng/arch/cpu/cc26x0-cc13x0/cc13xx-cc26xx-def.h 
    Line 75 #define RADIO_DELAY_BEFORE_TX ((unsigned)US_TO_RTIMERTICKS(81))
