@@ -1,3 +1,11 @@
+Ruu on CC1350 Launchpad
+0. Mix the TSCH and UDP-RPL for running the TSCH mode and sending the UDP data pakage.
+1. Change contiki-ng/arch/cpu/cc26x0-cc13x0/cc13xx-cc26xx-def.h 
+   Line 75 #define RADIO_DELAY_BEFORE_TX ((unsigned)US_TO_RTIMERTICKS(81))
+2. Timeslot_timing in project.conf be changed to 10000ms
+
+
+--------------------------------------------------------------------------------------
 A simple RPL network with UDP communication. This is a self-contained example:
 it includes a DAG root (`udp-server.c`) and DAG nodes (`udp-clients.c`).
 This example runs without a border router -- this is a stand-alone RPL network.
